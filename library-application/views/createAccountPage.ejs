@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Create New Account</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Borrowed Book(s)</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Books
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Mystery</a>
+                <a class="dropdown-item" href="#">Fantasy and Sci-Fi</a>
+                <a class="dropdown-item" href="#">Horror and Thriller</a>
+                <a class="dropdown-item" href="#">Young adult</a>
+                <a class="dropdown-item" href="#">Children's Fiction</a>
+                <a class="dropdown-item" href="#">Inspirational or Religious Books</a>
+                <a class="dropdown-item" href="#">Biography and Memoir</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Show all</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Create New Account</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <h1></h1>
+
+
+    <div class="mx-auto" style="width: 900px;">
+      <div class="card border-light mb-3">
+        <div class="card-header">Create New Account.</div>
+        <div class="card-body">
+          <h5 class="card-title">Fill Your Profile Here.</h5>
+          <form action="/create" method="post">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="fName">First Name</label>
+                <input type="text" name="firstName" class="form-control" id="fName" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lName">Last Name</label>
+                <input type="text" name="lastName" class="form-control" id="lName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="username">Username</label>
+                <input type="username" name="username" class="form-control" id="username" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" name="address" class="form-control" id="address" placeholder="Jalan Merdeka">
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="081xxxxxxxx">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" name="city" class="form-control" id="inputCity" placeholder="Jakarta">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputProvince">Province</label>
+                <select id="inputProvince" name="province" class="form-control">
+                  <option selected disabled>--SELECT ONE--</option>
+                  <option value="Aceh">
+                    ACEH
+                  </option>
+                  <option value="Sumatera Utara">
+                      SUMATERA UTARA
+                  </option>
+                  <option value="Sumatera Barat">
+                      SUMATERA BARAT
+                  </option>
+                  <option value="Riau">
+                      RIAU
+                  </option>
+                  <option value="Jambi">
+                      JAMBI
+                  </option>
+                  <option value="Sumatera Selatan">
+                      SUMATERA SELATAN
+                  </option>
+                  <option value="Bengkulu">
+                      BENGKULU
+                  </option>
+                  <option value="Lampung">
+                      LAMPUNG
+                  </option>
+                  <option value="Kepulauan Bangka Belitung">
+                      KEPULAUAN BANGKA BELITUNG
+                  </option>
+                  <option value="Kepulauan Riau">
+                      KEPULAUAN RIAU
+                  </option>
+                  <option value="DKI Jakarta">
+                      DKI JAKARTA
+                  </option>
+                  <option value="Jawa Barat">
+                      JAWA BARAT
+                  </option>
+                  <option value="Jawa Tengah">
+                      JAWA TENGAH
+                  </option>
+                  <option value="DI Yogyakarta">
+                      DI YOGYAKARTA
+                  </option>
+                  <option value="Jawa Timur">
+                      JAWA TIMUR
+                  </option>
+                  <option value="Banten">
+                      BANTEN
+                  </option>
+                  <option value="Bali">
+                      BALI
+                  </option>
+                  <option value="Nusa Tenggara Barat">
+                      NUSA TENGGARA BARAT
+                  </option>
+                  <option value="Nusa Tenggara Timur">
+                      NUSA TENGGARA TIMUR
+                  </option>
+                  <option value="Kalimantan Barat">
+                      KALIMANTAN BARAT
+                  </option>
+                  <option value="Kalimantan Tengah">
+                      KALIMANTAN TENGAH
+                  </option>
+                  <option value="Kalimantan Selatan">
+                      KALIMANTAN SELATAN
+                  </option>
+                  <option value="Kalimantan Timur">
+                      KALIMANTAN TIMUR
+                  </option>
+                  <option value="Sulawesi Utara">
+                      SULAWESI UTARA
+                  </option>
+                  <option value="Sulawesi Selatan">
+                      SULAWESI SELATAN
+                  </option>
+                  <option value="Sulawesi Tenggara">
+                      SULAWESI TENGGARA
+                  </option>
+                  <option value="Gorontalo">
+                      GORONTALO
+                  </option>
+                  <option value="Sulawesi Barat">
+                      SULAWESI BARAT
+                  </option>
+                  <option value="Maluku">
+                      MALUKU
+                  </option>
+                  <option value="Maluku Utara">
+                      MALUKU UTARA
+                  </option>
+                  <option value="Papua">
+                      PAPUA
+                  </option>
+                  <option value="Papua Barat">
+                      PAPUA BARAT
+                  </option>
+                  <option value="Sulawesi Tengah">
+                      SULAWESI TENGAH
+                  </option>
+                  <option value="Kalimantan Utara">
+                      KALIMANTAN UTARA
+                  </option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip Code</label>
+                <input type="text" name="zip" class="form-control" id="inputZip" placeholder="111xx">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Agree with Terms & Condition
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Create an Account</button>
+          </form>
+        </div>
+            
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
